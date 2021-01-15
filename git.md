@@ -10,4 +10,36 @@
 # git config --global user.name 이름
 # git config --global user.email 이메일  이걸 미리 설정해놓고
 # git commit -m '전달할 메세지' 
-# 수정
+# 
+
+#  기록확인은 git log     git log --oneline(옵션)
+# 맨처음 폴더 git이 관리할건지 아닐지를 결정. 
+#### 1. git init - 폴더당 1번
+#### 만약에 master가 보인다면 init하지 말것
+#### 2. 뭔가 파일을 기록하고 싶다면 
+####  2-1 git add 파일명  2-2 git commit - m '커밋메세지'
+#### 3. 수정했다면 2-1, 2-2 반복 
+
+
+
+
+# 원격(remote) 저장소
+
+- 폴더 단위로 관리됨
+
+내 컴퓨터의 저장소 -> github의 내가 만든 원격 저장소
+
+
+
+원격 저장소를 지정: origin이라고 하겠다. 그 주소는 https://github.com/intae-choi1/TIL.git
+
+```python
+$ git remote add origin https://github.com/intae-choi1/TIL.git
+```
+
+
+
+```shell
+$ git push origin master
+```
+
